@@ -1,0 +1,45 @@
+CREATE TABLE authour
+(
+    id         INTEGER PRIMARY KEY NOT NULL,
+    first_name VARCHAR(255)        NOT NULL,
+    last_name  VARCHAR(255)        NOT NULL,
+    phone      VARCHAR(20),
+    email      VARCHAR(128)
+
+);
+
+
+CREATE TABLE books
+(
+    id               INTEGER PRIMARY KEY NOT NULL,
+    title            VARCHAR(255)        NOT NULL,
+    publication_year INTEGER             NOT NULL,
+    genre            VARCHAR(128)        NOT NULL,
+    author_id        INTEGER REFERENCES authour (id) ON DELETE CASCADE
+);
+
+
+INSERT INTO authour
+VALUES (0, 'Maksym', 'Chalyi', '380989603578', 'maksimchalyi@gmail.com'),
+       (1, 'Vlad', 'Andrushchenko', '0678754615', 'vladprincess@gmail.com'),
+       (2, 'Oleg', 'Sternenko', '0965789031', 'olegdonat@gmail.com');
+
+INSERT INTO books
+VALUES (0, 'Road to one billion dollars of USA', 2023, 'Non-fiction', 0),
+       (1, '100 girls and me at 20 years', 2019, 'Fantastic', 1),
+       (2, '1 million dollars at 1000 minutes', 2021, 'Realistic', 2),
+       (3, 'How to pick up up 100 girls at 18', 2020, 'Realistic', 1);
+
+
+DROP TABLE books;
+DROP TABLE IF EXISTS authour;
+
+
+
+SELECT *
+FROM authour
+WHERE id = 3;
+
+
+SELECT *
+FROM books
