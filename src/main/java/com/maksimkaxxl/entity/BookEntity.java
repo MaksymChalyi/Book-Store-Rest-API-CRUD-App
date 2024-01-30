@@ -1,4 +1,4 @@
-package com.maksimkaxxl.Entity;
+package com.maksimkaxxl.entity;
 
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;

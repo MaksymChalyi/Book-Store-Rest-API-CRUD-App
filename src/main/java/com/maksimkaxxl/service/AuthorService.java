@@ -1,6 +1,6 @@
 package com.maksimkaxxl.service;
 
-import com.maksimkaxxl.Entity.AuthorEntity;
+import com.maksimkaxxl.entity.AuthorEntity;
 import com.maksimkaxxl.dao.AuthorDao;
 
 import java.sql.SQLException;

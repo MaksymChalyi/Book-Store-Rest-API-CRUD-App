@@ -1,6 +1,6 @@
 package com.maksimkaxxl.dao;
 
-import com.maksimkaxxl.Entity.BookEntity;
+import com.maksimkaxxl.entity.BookEntity;
 import com.maksimkaxxl.util.ConnectionManager;
 
 import java.sql.Connection;

@@ -1,7 +1,7 @@
 package com.maksimkaxxl.servlet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.maksimkaxxl.Entity.BookEntity;
+import com.maksimkaxxl.entity.BookEntity;
 import com.maksimkaxxl.service.BookService;
 
 import javax.servlet.ServletException;

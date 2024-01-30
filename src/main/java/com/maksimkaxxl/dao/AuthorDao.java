@@ -1,6 +1,6 @@
 package com.maksimkaxxl.dao;
 
-import com.maksimkaxxl.Entity.AuthorEntity;
+import com.maksimkaxxl.entity.AuthorEntity;
 import com.maksimkaxxl.util.ConnectionManager;
 import lombok.SneakyThrows;
 

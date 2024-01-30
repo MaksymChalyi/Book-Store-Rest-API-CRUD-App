@@ -2,7 +2,7 @@ package com.maksimkaxxl.servlet;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.maksimkaxxl.Entity.AuthorEntity;
+import com.maksimkaxxl.entity.AuthorEntity;
 import com.maksimkaxxl.service.AuthorService;
 
 import javax.servlet.ServletException;
